@@ -16,6 +16,7 @@ buttons.forEach((item) => {
       setTimeout(() => (display.innerText = ""), 2000);
     }else{
         display.innerText+=item.id
+        
     }
   };
 });
