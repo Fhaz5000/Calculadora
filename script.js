@@ -16,7 +16,20 @@ buttons.forEach((item) => {
       setTimeout(() => (display.innerText = ""), 2000);
     }else{
         display.innerText+=item.id
-        
+
     }
   };
 });
+
+const themeToggleBtn =document.querySelector(".theme-toggler");
+const calculator = document.querySelector(".calculator");
+
+
+let isDark= true;
+
+themeToggleBtn.onclick= () =>{
+  calculator.classList.toggle("dark");
+  themeToggleBtn.classList.toggle("active")
+}
+
+
