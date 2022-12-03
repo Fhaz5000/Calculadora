@@ -25,24 +25,108 @@ body {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 30px rgb(187, 130, 130);
-  background-color: #fff;
+  background-color: rgb(211, 211, 211);
+  /*Dark*/
 }
 .calculator #display {
   color: #0a1e23;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0 10px;
+  height: 120px;
+  width: auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+.calculator #equal {
+  height: 130px;
 }
 .calculator #clear {
-  background-color: #fffde7;
-  color: red;
+  background-color: #ffffff;
+  color: rgb(14, 13, 13);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .calculator .btn-number {
-  background-color: #ffd0fb;
+  background-color: rgba(11, 221, 236, 0.6352941176);
   color: #000000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .calculator .btn-operator {
-  background-color: #ffd0fb;
-  color: #f967f3;
+  background-color: #ffffff;
+  color: #0a0a0a;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 .calculator .btn-equal {
-  background-color: #adf9e7;
+  background-color: #ffffff;
   color: #000000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.calculator.dark {
+  background-color: #0a0a0a;
+}
+.calculator.dark #display {
+  color: #ffffff;
+}
+.calculator.dark #clear {
+  background-color: rgba(253, 253, 253, 0.8784313725);
+  color: rgba(241, 0, 0, 0.904);
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.calculator.dark .btn-number {
+  background-color: rgba(18, 114, 98, 0.8078431373);
+  color: #f1eded;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.calculator.dark .btn-operator {
+  background-color: #ffffff;
+  color: #0a0a0a;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.calculator.dark .btn-equal {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.theme-toggler {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 1;
+}
+.theme-toggler::before {
+  content: "";
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #333;
+  z-index: -1;
+}
+
+.theme-toggler .active {
+  color: #333;
+}
+.theme-toggler .active::before {
+  background-color: #fff;
+}
+
+button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+button:hover {
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
